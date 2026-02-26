@@ -12,7 +12,7 @@
 		android:layout_alignParentTop="true"
 		android:paddingLeft="10dp"
 		android:gravity="center"
-		android:background="#FF3A3A3A"
+		android:background="#3B3C36"
 		android:layout_gravity="center">
 		<ImageView
 			android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
 						android:layout_width="fill_parent"
 						android:layout_height="fill_parent"
 						android:orientation="vertical"
-						android:background="#FF313131">
+						android:background="#3B3C36">
 						<TextView
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content" 

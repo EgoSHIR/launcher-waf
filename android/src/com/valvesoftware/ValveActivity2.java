@@ -69,7 +69,7 @@ public class ValveActivity2 { // not activity, i am lazy to change native method
 		String gamepath = mPref.getString("gamepath", LauncherActivity.getDefaultDir() + "/srceng");
 		String gamedir = intent.getStringExtra("gamedir");
 		if( gamedir == null || gamedir.isEmpty() )
-			gamedir = "hl2";
+			gamedir = "portal2";
 
 		if( !findGameinfo(gamepath) || !isModGameinfoExists(gamepath+"/"+gamedir) )
 			return false;
@@ -89,7 +89,7 @@ public class ValveActivity2 { // not activity, i am lazy to change native method
 		Log.v("SRCAPK", "argv="+argv);
 
 		if( gamedir == null || gamedir.isEmpty() )
-			gamedir = "hl2";
+			gamedir = "portal2";
 
 		if( argv == null || argv.isEmpty() )
 			argv = mPref.getString("argv", "-console");

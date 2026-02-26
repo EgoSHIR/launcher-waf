@@ -3,7 +3,7 @@ package me.nillerusr;
 import android.content.*;
 import java.io.*;
 import java.net.*;
-import com.valvesoftware.source.R;
+import com.valvesoftware.portal2.R;
 import android.os.AsyncTask;
 import java.net.URL;
 import java.net.URLConnection;
