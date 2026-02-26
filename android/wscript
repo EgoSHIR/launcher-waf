@@ -18,7 +18,7 @@ def build(bld):
 		buildcopy_source = bld.path.ant_glob( "lib/" ),
 		srcdir = 'src',
 		compat = bld.env.JAVAC_SOURCE_TARGET,
-		name = 'mod',
+		name = 'gen',
 		jni = 'lib',
 		keystore = bld.path.parent.find_node( bld.env.JKEYSTORE ),
 		debug = bld.env.D8_DEBUG,

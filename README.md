@@ -1,5 +1,6 @@
-# Source Engine Android Mod Template
+# Source Engine Android Template
 - Repository based on [FWGS Xash3D android launcher](https://github.com/FWGS/xash3d-android-project)
+- Application sources [Srceng Android](https://github.com/nillerusr/srceng-android)
 
 ## Building
 - Create SDK with sdkmanager
