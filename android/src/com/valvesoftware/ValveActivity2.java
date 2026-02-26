@@ -68,9 +68,13 @@ public class ValveActivity2 { // not activity, i am lazy to change native method
 		mPref = context.getSharedPreferences("mod", 0);
 		String gamepath = mPref.getString("gamepath", LauncherActivity.getDefaultDir() + "/srceng");
 		String gamedir = intent.getStringExtra("gamedir");
-		if( gamedir == null || gamedir.isEmpty() )
-			gamedir = "hl2";
-
+		if( gamedir == null || gamedir.isEmpty() ) {
+			if (mPref.getInt("episode", 0) == 0) {
+				gamedir = "episodic";
+			} else {
+				gamedir = "ep2";
+			}
+		}
 		if( !findGameinfo(gamepath) || !isModGameinfoExists(gamepath+"/"+gamedir) )
 			return false;
 
@@ -88,8 +92,13 @@ public class ValveActivity2 { // not activity, i am lazy to change native method
 		String customVPK = intent.getStringExtra("vpk");
 		Log.v("SRCAPK", "argv="+argv);
 
-		if( gamedir == null || gamedir.isEmpty() )
-			gamedir = "hl2";
+		if( gamedir == null || gamedir.isEmpty() ) {
+			if (mPref.getInt("episode", 0) == 0) {
+				gamedir = "episodic";
+			} else {
+				gamedir = "ep2";
+			}
+		}
 
 		if( argv == null || argv.isEmpty() )
 			argv = mPref.getString("argv", "-console");

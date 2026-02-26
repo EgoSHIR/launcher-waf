@@ -47,6 +47,7 @@ public class LauncherActivity extends Activity {
 	public SharedPreferences mPref;
 	public static final int sdk = Integer.valueOf(Build.VERSION.SDK).intValue();
 	static CheckBox useVolumeButtons, check_updates;
+	static Spinner spin;
 
 	final static int REQUEST_PERMISSIONS = 42;
 
@@ -198,6 +199,28 @@ public class LauncherActivity extends Activity {
 				intent.addFlags(268435456);
 				startActivity(intent);
 			}
+		});
+
+//spin
+		spin = (Spinner)findViewById(R.id.spinner_games);
+		ArrayAdapter arrayAdapter;
+		ArrayList<String> arrayList = new ArrayList();
+		arrayList.add("Half-Life 2 Episode 1");
+		arrayList.add("Half-Life 2 Episode 2");
+      	if (sdk >= 21) {
+        	arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, arrayList);
+      	} else {
+        	arrayAdapter = new ArrayAdapter(this, R.layout.spinner_item_v8, arrayList);
+      	} 
+      	spin.setAdapter((SpinnerAdapter)arrayAdapter);
+		spin.setSelection(mPref.getInt("episode", 0));
+		spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				SharedPreferences.Editor editor = mPref.edit();
+				editor.putInt("episode", position);
+				editor.apply();
+			}
+			public void onNothingSelected(AdapterView<?> parent) {}
 		});
 
 /*		if (sdk >= 19) {
