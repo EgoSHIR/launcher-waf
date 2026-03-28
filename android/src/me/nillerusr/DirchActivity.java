@@ -27,7 +27,7 @@ import java.io.InputStream;
 import java.util.regex.Pattern;
 import org.libsdl.app.SDLActivity;
 import android.content.pm.PackageManager;
-import com.valvesoftware.source.R;
+import com.valvesoftware.portal2.R;
 import android.widget.LinearLayout.LayoutParams;
 import android.content.pm.PackageInfo;
 import android.content.pm.Signature;
