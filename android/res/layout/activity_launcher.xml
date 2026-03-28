@@ -151,6 +151,15 @@
 							android:layout_marginTop="5dp"
 							android:layout_marginBottom="5dp"
 							android:textColor="#FFFFFF"/>
+						<Spinner
+							android:id="@+id/spinner_games"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="3.0dip"
+							android:layout_marginTop="5.0dip"
+							android:layout_marginRight="3.0dip"
+							android:layout_marginBottom="5.0dip"
+							android:popupBackground="#ff333333"/>
 <!--
 						<CheckBox
 							android:id="@+id/checkbox_use_volume"
