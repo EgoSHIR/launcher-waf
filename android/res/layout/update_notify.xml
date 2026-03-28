@@ -5,14 +5,14 @@ android:layout_height="fill_parent"
 android:padding="10dp">
 <ImageView
     android:id="@+id/image"
-    android:src="@drawable/launcher_update"
+    android:src="@drawable/ic_launcher"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"
     android:layout_alignParentLeft="true"
     android:layout_marginRight="10dp" />
 <TextView
     android:id="@+id/title"
-    android:text="@string/mod_name"
+    android:text="@string/srceng_app_name"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_toRightOf="@id/image"
@@ -20,7 +20,7 @@ android:padding="10dp">
     android:textColor="#FFFFFF" />
 <TextView
     android:id="@+id/text"
-    android:text="@string/new_update"
+    android:text="@string/srceng_update"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@id/title"

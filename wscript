@@ -11,7 +11,7 @@ sys.path.append(os.path.realpath('scripts/waflib'))
 # print(sys.path)
 
 VERSION = '1.0'
-APPNAME = 'srceng-mod-launcher'
+APPNAME = 'srceng-launcher'
 top = '.'
 
 class Subproject:
