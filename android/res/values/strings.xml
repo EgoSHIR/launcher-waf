@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="srceng_app_name">Source Engine</string>
+    <string name="srceng_app_name">Portal 2</string>
 
     <string name="srceng_launcher_about">About</string>
     <string name="srceng_launcher_about_text">\nThanks to nillerusr and jusic for port\nvalve for source engine\n\nMany thanks to Shurik,\nthanks to him portal 2\nbecame possible on phones,\nplay and experiment!\n\nStatus: Not completed\n\nNot for commercial use!\n\nThis is not a port of ItzVladik!!!</string> <!--- Not available -->
