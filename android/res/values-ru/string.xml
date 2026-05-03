@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="srceng_launcher_about">О порте</string>
-    <string name="srceng_launcher_about_text">\nОсобая благодарность:\nnillerusr,Jusic за порт \nvalve за source engine\n\nОгромное спасибо Шурику,\nблагодаря нему стал возможен\nпортал 2 на телефонах,\nиграйте и экспериментируйте!\n\nНе для коммерческого использования!\n\nСтатус: Не завершён\n\nЭто не порт ItzVladik!!!</string> <!--- Not available -->
+    <string name="srceng_launcher_about_text">\nРазработчики:\nШурик(@Shurik92930044)\nДобрый Кола(@UxyOy)\nEgoSHi(@EgoSHi228)\n\nТестеры:\nJustADev(x_justadeveloper_x)\nVissord(@Vissord)\n\nСтатус: Не завершён\n\nYoutube:https://www.youtube.com/@shurik927\nDiscord:https://discord.gg/UGQRmXp7TX\nTelegram:https://t.me/sourceprojects\n\nНе для коммерческого использования!\n\nЭто не порт ItzVladik!!!</string> <!--- Not available -->
     <string name="srceng_launcher_launch">Запустить</string>
     <string name="srceng_launcher_ok">OK</string>
     <string name="srceng_launcher_set">Выбрать</string>
