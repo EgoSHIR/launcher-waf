@@ -34,4 +34,18 @@
 
     <string name="srceng_dir_choice_btn">Set current directory</string>
     <string name="srceng_update">Update avalible!</string>
+    <string name="steam_login_title">Steam Account</string>
+    <string name="steam_sign_in">SIGN IN</string>
+    <string name="steam_logout">LOGOUT</string>
+    <string name="steam_view_profile">VIEW PROFILE</string>
+    <string name="steam_sign_in_desc">Sign in to access your Steam account</string>
+    <string name="steam_loading">Loading Steam…</string>
+    <string name="steam_verifying">Verifying login…</string>
+    <string name="steam_loading_profile">Loading profile…</string>
+    <string name="steam_login_error_network">Network error. Please check your internet connection.</string>
+    <string name="steam_login_error_validation">Login validation failed.</string>
+    <string name="steam_login_error_response">Invalid Steam response.</string>
+    <string name="steam_login_error_profile">Failed to load profile.</string>
+    <string name="steam_login_error_start">Error starting login.</string>
+    <string name="steam_logged_out">Logged out.</string>
 </resources>

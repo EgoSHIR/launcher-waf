@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:label="" android:name="me.nillerusr.SteamLoginActivity" android:windowSoftInputMode="adjustResize" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="me.nillerusr.STEAM_LOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
         <activity android:label="Directory" android:name="me.nillerusr.DirchActivity" android:windowSoftInputMode="adjustResize|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.DIRCH"/>

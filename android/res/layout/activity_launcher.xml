@@ -22,11 +22,25 @@
 			android:src="@drawable/ic_launcher"/>
 		<TextView
 			android:id="@+id/header_text"
-			android:layout_width="match_parent"
+			android:layout_width="0dp"
 			android:layout_height="wrap_content"
+			android:layout_weight="1"
 			android:text="@string/srceng_app_name"
 			android:textColor="#FFFFFF"
 			android:textSize="25sp"/>
+		<Button
+			android:id="@+id/button_steam"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:background="@drawable/btn_primary_selector"
+			android:text="@string/steam_login_title"
+			android:textColor="#FFFFFF"
+			android:textSize="11sp"
+			android:textStyle="bold"
+			android:letterSpacing="0.04"
+			android:paddingLeft="14dp"
+			android:paddingRight="14dp"
+			android:layout_marginRight="5dp"/>
 	</LinearLayout>
 	<LinearLayout
 		android:id="@+id/footer"

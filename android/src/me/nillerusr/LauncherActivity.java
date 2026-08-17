@@ -200,6 +200,15 @@ public class LauncherActivity extends Activity {
 			}
 		});
 
+		Button steamButton = findViewById(R.id.button_steam);
+		steamButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(LauncherActivity.this, SteamLoginActivity.class);
+				intent.addFlags(268435456);
+				startActivity(intent);
+			}
+		});
+
 /*		if (sdk >= 19) {
 			immersiveMode.setChecked(true);
 		}*/

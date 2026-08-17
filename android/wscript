@@ -13,17 +13,25 @@ def configure(conf):
 	return
 
 def build(bld):
-	tsk = bld(
-		features = 'android javac buildcopy',
-		buildcopy_source = bld.path.ant_glob( "lib/" ),
-		srcdir = 'src',
-		compat = bld.env.JAVAC_SOURCE_TARGET,
-		name = 'gen',
-		jni = 'lib',
-		keystore = bld.path.parent.find_node( bld.env.JKEYSTORE ),
-		debug = bld.env.D8_DEBUG,
-		target_api = 29
-	)
+    import os
+    jar_cp = []
+    libs_dir = bld.path.find_dir('libs')
+    if libs_dir:
+        for f in libs_dir.ant_glob('*.jar'):
+            jar_cp.append(f.abspath())
 
-	tsk.env.append_unique( "JAVACFLAGS", [ "-target", bld.env.JAVAC_SOURCE_TARGET ] )
-	return
+    tsk = bld(
+        features = 'android javac buildcopy',
+        buildcopy_source = bld.path.ant_glob( "lib/" ) + (libs_dir.ant_glob('*.jar') if libs_dir else []),
+        srcdir = 'src',
+        compat = bld.env.JAVAC_SOURCE_TARGET,
+        name = 'gen',
+        jni = 'lib',
+        keystore = bld.path.parent.find_node( bld.env.JKEYSTORE ),
+        debug = bld.env.D8_DEBUG,
+        target_api = 36,
+        classpath = jar_cp
+    )
+
+    tsk.env.append_unique( "JAVACFLAGS", [ "-target", bld.env.JAVAC_SOURCE_TARGET ] )
+    return

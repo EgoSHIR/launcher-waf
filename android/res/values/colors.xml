@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="hl_color">#F79A10</color>
-	<color name="spin_color">#3F3F3F</color>
-</resources>
+    <color name="hl_color">#F79A10</color>
+    <color name="spin_color">#3F3F3F</color>
 
+    <color name="steam_bg">#181A21</color>
+    <color name="steam_input_bg">#32353C</color>
+    <color name="steam_input_border">#26282D</color>
+    <color name="steam_input_text">#E9E9E9</color>
+    <color name="steam_label">#b8b6b4</color>
+    <color name="steam_btn_text">#c3e1f8</color>
+    <color name="steam_btn_gradient_start">#47bfff</color>
+    <color name="steam_btn_gradient_end">#1a44c2</color>
+    <color name="steam_text_primary">#FFFFFF</color>
+    <color name="steam_text_secondary">#8F98A0</color>
+    <color name="steam_text_muted">#5A6A7A</color>
+    <color name="steam_divider">#264959</color>
+    <color name="steam_green">#5BA37D</color>
+</resources>

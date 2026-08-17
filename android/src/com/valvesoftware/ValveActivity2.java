@@ -69,7 +69,7 @@ public class ValveActivity2 { // not activity, i am lazy to change native method
 		String gamepath = mPref.getString("gamepath", LauncherActivity.getDefaultDir() + "/srceng");
 		String gamedir = intent.getStringExtra("gamedir");
 		if( gamedir == null || gamedir.isEmpty() )
-			gamedir = "portal2";
+			gamedir = "hl2";
 
 		if( !findGameinfo(gamepath) || !isModGameinfoExists(gamepath+"/"+gamedir) )
 			return false;
@@ -89,7 +89,7 @@ public class ValveActivity2 { // not activity, i am lazy to change native method
 		Log.v("SRCAPK", "argv="+argv);
 
 		if( gamedir == null || gamedir.isEmpty() )
-			gamedir = "portal2";
+			gamedir = "hl2";
 
 		if( argv == null || argv.isEmpty() )
 			argv = mPref.getString("argv", "-console");
@@ -116,6 +116,18 @@ public class ValveActivity2 { // not activity, i am lazy to change native method
 			setenv( "VALVE_GAME_PATH", LauncherActivity.getAndroidDataDir(), 1 );
 		else
 			setenv( "VALVE_GAME_PATH", gamepath, 1 );
+
+		SharedPreferences steamPrefs = context.getSharedPreferences("steam_session", Context.MODE_PRIVATE);
+		String steamId = steamPrefs.getString("steam_id64", null);
+		String username = steamPrefs.getString("username", null);
+		String requestToken = steamPrefs.getString("request_token", null);
+
+		if (steamId != null)
+			setenv("SB_STEAMID64", steamId, 1);
+		if (username != null)
+			setenv("SB_ACCOUNT", username, 1);
+		if (requestToken != null)
+			setenv("SB_REFRESH_TOKEN", requestToken, 1);
 
 		Log.v("SRCAPK", "argv="+argv);
 		setArgs(argv);
